@@ -1,0 +1,15 @@
+
+
+
+
+
+<ul>
+<% @restaurants.each do |restaurant| %>
+  <li><h2><%= restaurant.name %></h2></li>
+ <li><p><%= restaurant.address %></p></li>
+ <li><p><%= restaurant.phone_number %></p></li>
+ <li><p><%= restaurant.category %></p></li>
+ <%= link_to "See details", restaurant, class: "btn btn-primary"%>
+ <hr>
+<% end %>
+</ul>
